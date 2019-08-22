@@ -3,7 +3,7 @@
   width: 100vw;
   display: flex;
   flex-direction: column;
-  justify-content: center;
+  justify-content: space-around;
   align-items: center;
   background-color: black;
 }
@@ -48,5 +48,45 @@
   display: flex;
   align-items: center;
   justify-content: space-around;
+}
+
+#tweet-quote {
+  text-decoration: none;
+  color: #ccc;
+  font-family: 'Lexend Zetta', sans-serif;
+  padding: 1.1rem 2rem;
+  border: 1px solid #ccc;
+  font-size: .75rem;
+  margin: 0;
+}
+
+@media only screen and (max-width: 900px) {
+  #quote-box {
+    width: 90%;
+  }
+
+  .header__logo {
+    width: 350px;
+    height: 200px;
+  }
+
+  #tweet-quote {
+    border: none;
+  }
+}
+
+@media only screen and (max-width: 600px) {
+  .header__logo {
+    width: 200px;
+    height: 100px;
+  }
+
+  #text {
+    height: 60%;
+  }
+
+  #quote-box {
+    height: 60%;
+  }
 }
 

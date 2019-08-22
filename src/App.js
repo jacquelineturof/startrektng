@@ -53,7 +53,7 @@ class App extends Component {
   render () {
     return (
       <div className="App">
-        <img src = { tng } alt = "trek logo" />
+        <img src = { tng } alt = "trek logo" className = "header__logo" />
         <QuoteBox randomQuote = { quotes[this.state.index] } clicked = { this.generateNewIndex } />
       </div>
     );

@@ -7,7 +7,7 @@
     Author signatures
 */
 
-.signature{
+.signature {
     font-size: 2rem;
 }
 
@@ -42,36 +42,74 @@
     box-shadow: none;
     border-radius: 0px;
     outline: none;
+    margin: 0;
   
-    border: 2px solid silver;
-    color: silver;
-    padding: 2rem 7.5rem;
-    font-size: 1.5rem;
+    border: 1px solid #ccc;
+    color: #ccc;
+    font-family: 'Lexend Zetta', sans-serif;
 
     position: relative;
     overflow: hidden;
     cursor: pointer;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.animated__button > * {
+    height: 50%;
+    width: 80%;
+    display: inline-block;
+    transition: all .4s;
 }
 
 .btn__visible {
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    
+    padding: 1rem 2rem;
 }
 
 .btn__invisible {
     position: absolute;
     left: 0;
     top: -100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
 .animated__button:hover .btn__visible {
-    top: -100%;
+    transform: translateY(-400px);
 }
 
 .animated__button:hover .btn__invisible {
     top: 0%;
 }
+
+@media only screen and (max-width: 900px) {
+    .text {
+        font-size: .75rem;
+    }
+
+    .signature {
+        font-size: 1rem;
+    }
+
+    .animated__button {
+        border: none;
+    }
+
+    .btn__visible {
+        padding: .5rem 1rem;
+    }
+  }
+
+  @media only screen and (max-width: 600px) {
+    .text {
+        font-size: .5rem;
+    }
+
+    .signature {
+        font-size: .75rem;
+    }
+  }
 

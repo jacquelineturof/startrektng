@@ -32,7 +32,7 @@ const quoteBox = ( props ) => {
     
         <div id = "quote-box-bottom">
         <div id = "author" className = { signatureClasses.join(' ') }>
-            { props.randomQuote.author }
+            -- { props.randomQuote.author }
           </div>
           
           <div id = "quote-box-controls">
