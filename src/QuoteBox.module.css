@@ -1,0 +1,77 @@
+.text {
+    font-family: 'Lexend Zetta', sans-serif;
+    line-height: 25px;
+}
+
+/*
+    Author signatures
+*/
+
+.signature{
+    font-size: 2rem;
+}
+
+.Picard {
+    font-family: 'Marck Script', cursive;
+}
+
+.Q {
+    font-family: 'Fondamento', cursive;
+}
+
+.Data {
+    font-family: 'Lateef', cursive;
+}
+
+.Worf {
+    font-family: 'Rock Salt', cursive;
+}
+
+.Riker {
+    font-family: 'Mr Dafoe', cursive;
+}
+
+/*
+  Need position: relative for your dynamic text on hover
+  overflow: hidden --> so we don't see the text floating above the button
+*/
+
+.animated__button {
+    border: 0;
+    background: none;
+    box-shadow: none;
+    border-radius: 0px;
+    outline: none;
+  
+    border: 2px solid silver;
+    color: silver;
+    padding: 2rem 7.5rem;
+    font-size: 1.5rem;
+
+    position: relative;
+    overflow: hidden;
+    cursor: pointer;
+}
+
+.btn__visible {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    
+}
+
+.btn__invisible {
+    position: absolute;
+    left: 0;
+    top: -100%;
+}
+
+.animated__button:hover .btn__visible {
+    top: -100%;
+}
+
+.animated__button:hover .btn__invisible {
+    top: 0%;
+}
+
